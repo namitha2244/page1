@@ -1,0 +1,199 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><p class="font-weight-bold">TrustyX</p></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+    <ul class="navbar-nav mr-auto" >
+      <li class="nav-item active">
+        <a class="nav-link"  href="#">Create</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Connect to phantom<span class="sr-only">(current)</span></a>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+          
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">My product</a>
+          <a class="dropdown-item" href="#">Edit profile</a>
+          <a class="dropdown-item" href="#">Disconnect wallet</a>
+          <a class="dropdown-item" href="#">Logout</a>
+          <a class="dropdown-item" href="#">Night Mode<span><i class="fas fa-lightbulb-on" style="margin:10px"></i></span></a>
+        </div>
+      </li>
+     
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search"  placeholder="Search token address" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    
+  </div>
+</nav>
+<!-- responsive nav ends -->
+
+<div class="d-flex justify-content-between ml-2 mt-2">
+  <div class="font-weight-bolder ml-3">Ready to Mint (123)</div>
+  <div class="d-flex">
+    <div class="mr-4 search"><i class="fas fa-search pl-2"></i>Search</div>
+    <div class="mr-4 filter"><i class="fas fa-filter pl-2"></i>Filter</div>
+    <div class="mr-4 sort"><i class="fas fa-arrows-v"></i>Sort</div>
+
+</div>
+</div>
+
+<!-- card -->
+<div class="row mt-2  ml-4 img col-md-12">
+  <div class="card mt-3 ml-2" *ngFor="let item of Data" style="width: 15rem;">
+    <img class="card-img-top" src="https://tse4.mm.bing.net/th?id=OIP.fib7SJds9UgImu3Pt6fEIAHaC9&pid=Api&P=0" >
+    <div class="card-body mt-5">
+      <div class="d-flex ml-1 font-weight-bold nftname">NFT Name
+        <div class="d-flex ml-1 font-weight-bold colon">:
+          <div class="d-flex ml-1 font-weight-bold data">{{item.NFT_Name}}</div>
+
+</div>
+</div>
+
+<div class="d-flex ml-1 font-weight-bold symbol">Symbol
+  <div class="d-flex ml-4 font-weight-bold colon">:
+    <div class="d-flex ml-1 font-weight-bold data">{{item.Symbol}}</div>
+
+</div>
+</div>
+
+<div class="d-flex ml-5 mt-3">
+  <!-- <a href="#" class="btn btn-primary">Mint</a> -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Mint
+  </button>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+  <div class="modal-content">
+  <div class="modal-header">
+  
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+
+
+  <div class="modal-body ml-4">
+    <div class="d-flex row">
+  <img src="https://tse1.mm.bing.net/th?id=OIP.9DxqRdlbddarXotp8LbCMQHaLJ&pid=Api&P=0" height="400px" width="350px" >
+  <div class="flex-column mt-3">
+  <div class="d-flex ml-5 row"><div class="flex-column">Title: Plant
+    </div>
+  </div>
+
+  <div class="d-flex ml-5 mt-3 row"><div class="flex-column">Symbol: Nature
+  </div>
+</div>
+
+<div class="d-flex ml-5 mt-3 row"><div class="flex-column">: Now is the winter of our discontent
+</div>
+</div>
+
+<div class="d-flex ml-5  row"><div class="flex-column">Made glorious summer by this sun of york;And all the clouds that upon our house
+</div>
+</div>
+
+<div class="d-flex ml-5  row"><div class="flex-column">In the deep bosom of the ocean buried
+</div>
+</div>
+
+<div class="d-flex ml-5  row"><div class="flex-column">Now are our brows bound with victorious wreaths
+</div>
+</div>
+
+<div class="d-flex ml-5  row"><div class="flex-column">Our bruised arms hung up for monuments
+</div>
+</div>
+
+<div class="d-flex ml-5 mt-3  row"><div class="flex-column">Properties:
+</div>
+</div>
+
+<div class="d-flex ml-5 mt-3  row"><div class="flex-column">
+  <div class="table-responsive"><table class="table mx-5 " style="width: 450px;">
+  
+    <thead class="thead-dark">
+     
+        <tr>
+        <th scope="col">trait type</th>
+        <th scope="col">value</th>
+      </tr>
+    
+    </thead>
+    
+    <tbody>
+      
+      <tr  >
+        <td  >background</td>
+        <td  >green</td>
+    </tr>
+    
+    <tr  >
+      <td  >Flower1</td>
+      <td  >Yellow</td>
+  </tr>
+
+  <tr  >
+    <td  >Flower2</td>
+    <td  >Orange</td>
+</tr>
+
+    </tbody>
+  </table></div>
+  
+
+</div>
+</div>
+
+
+
+
+
+</div>
+
+  
+</div>
+
+
+
+
+
+</div>
+
+
+
+  
+  </div>
+  </div>
+  </div>
+
+  <!-- modal end -->
+  
+
+  
+
+</div>
+
+</div>
+</div>
+</div>
+
+
+<!-- modal -->
+
+
+
+
+
+
+
